@@ -11,7 +11,7 @@
         color: #f1f1f1;
         font-weight: bold;
         text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Courier New', Courier, monospace;
     }
 
     .Projects {
@@ -22,7 +22,7 @@
         flex-wrap: wrap;
         color: #eaeaea;
         font-weight: bold;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Courier New', Courier, monospace;
          margin-bottom: 40px;
     }
 
@@ -30,7 +30,7 @@
         font-size: 32px;
         color: #00d9ff;
         text-shadow: 0 0 10px rgba(0, 217, 255, 0.4);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
     }
 
@@ -90,7 +90,7 @@
         text-align: center;
         margin-top: 20px;
         font-size: 30px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
         flex-direction: row;
     }
@@ -98,7 +98,7 @@
     .InfoButton{
         height: 40px;
         width: 145px;
-        font-size: 20px;
+        font-size: 19px;
         border-width: 1px;
         border-radius: 10px;
         border-color:  rgba(0, 217, 255, 0.2);
@@ -109,6 +109,7 @@
         color: white;
         font-weight: bold;
         margin-top: 30px;
+        font-family: 'Courier New', Courier, monospace;
     }
     .InfoButton:hover{
         transform: scale(1.04);
@@ -125,8 +126,8 @@
 
 <div class="Infos">
     <button class="InfoButton" onclick="window.open('https://mayfly-studios.itch.io')">Our Itch.io</button>
-    <button class="InfoButton" onclick="window.open('https://discord.com/users/730438003192758283')">Contact</button>
-    <button class="InfoButton" onclick="window.open('https://www.youtube.com/watch?v=xvFZjo5PgG0')">About</button>
+    <button class="InfoButton" onclick="window.open(window.location.href='Contact.html')">Contact</button>
+    <button class="InfoButton" onclick="window.open(window.location.href='about.html')">About</button>
 </div>
 
 <div class="ProjectsTextContainer">
@@ -204,5 +205,14 @@
              <p>- low poly models</p>
         </div>
     </button>
+        <button class="PROJECT">
+        <img src="MusicPack.jpg" alt="Asset4" class="ButtonPic" onclick="window.open('https://mayfly-studios.itch.io/mixed-music-pack')">
+        Mixed Game Music PAck
+        <div class="ButtonTextBelow">
+             <p>2&#36</p>
+             <p>- 0:20 minute to 3:03 minute long musics</p>
+             <p>- 9 different music files for all kinds of projects</p>
+             <p>- MP3 format</p>
+        </div>
+    </button>
 </div>
-

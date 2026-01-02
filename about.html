@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1b1f3b, #283e51);
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            color: aliceblue;
+        }
+
+        .UP {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .TITLE2 {
+            font-size: clamp(48px, 6vw, 80px);
+            text-shadow: 0 0 30px rgba(255,255,255,0.6);
+            margin-bottom: 10px;
+        }
+
+        .TITLE3 {
+            font-size: clamp(32px, 4vw, 50px);
+            text-shadow: 0 0 15px rgba(255,255,255,0.5);
+            text-decoration: underline;
+            margin-bottom: 60px;
+        }
+
+        .team {
+            display: flex;
+            gap: 80px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 360px;
+            padding: 30px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(6px);
+            box-shadow: 0 0 30px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .member:hover {
+            transform: translateY(-8px);
+        }
+
+        .IMAGE {
+            width: 280px;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 18px;
+            border: 1px solid rgba(255,255,255,0.4);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+            margin-bottom: 20px;
+        }
+
+        .Names {
+            font-size: 28px;
+            margin: 10px 0 5px;
+            text-shadow: 0 0 15px rgba(255,255,255,0.6);
+        }
+
+        .titles {
+            font-size: 18px;
+            opacity: 0.85;
+            text-align: center;
+        }
+
+        .site{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            border-radius: 18px;
+            border: 0;
+            padding: 10px 40px;
+            font-size: 26px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.4);
+            cursor: pointer;
+            transition: transform 0.3s ease;;
+        }
+        .site:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="UP">
+        <h1 class="TITLE2">ABOUT US</h1>
+        <h2 class="TITLE3">Our Team</h2>
+
+        <div class="team">
+            <div class="member">
+                <img class="IMAGE" src="Zalan.jpg" alt="Zalan">
+                <p class="Names">Kohári Zalán</p>
+                <p class="titles">Founder · Main Programmer · 3D Artist</p>
+                <button class="site" onclick="window.open('https://github.com/kohi-bit')">Github</button>
+            </div>
+
+            <div class="member">
+                <img class="IMAGE" src="Mate.jpg" alt="Mate">
+                <p class="Names">Zsóri Máté</p>
+                <p class="titles">Co-Founder · Music / Sound Artist</p>
+                <button class="site" onclick="window.open('https://soundcloud.com/zsori-mate')">Soundcloud</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
